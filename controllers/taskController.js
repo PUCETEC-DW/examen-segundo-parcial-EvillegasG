@@ -1,4 +1,4 @@
-const taskModel = require('../models/taskModel');
+import taskModel from '../models/taskModel.js';
 
 exports.getTasks = (req, res) => {
   res.json(taskModel.getAllTasks());
